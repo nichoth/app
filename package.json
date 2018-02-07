@@ -1,6 +1,16 @@
 {
+  "name": "@nichoth/app",
+  "version": "0.0.0",
+  "description": "stuff",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
   "scripts": {
-    "test": "node example/index.js"
+    "test": "node example/index.js",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "dependencies": {
     "@nichoth/state": "0.0.10"
@@ -9,14 +19,6 @@
     "@nichoth/events": "^0.5.2",
     "eslint": "^4.17.0",
     "eslint-config-minlint": "^2.0.0"
-  },
-  "name": "@nichoth/app",
-  "version": "0.0.0",
-  "description": "stuff",
-  "main": "index.js",
-  "directories": {
-    "example": "example",
-    "test": "test"
   },
   "repository": {
     "type": "git",

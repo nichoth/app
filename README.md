@@ -2,6 +2,10 @@
 
 Stuff that doesn't fit in other places
 
+## install
+
+    $ npm install @nichoth/app
+
 ## subscription
 
 Subscribe to an event bus and call methods
