@@ -21,15 +21,16 @@ var sub = Sub(demoStore, bus)
 
 bus.emit('example', 'again')
 console.log(demoStore.state().hello)
-assert.equal(demoStore.state().hello, 'again')
+assert.equal(demoStore.state().hello, 'again',
+    'should call method by string')
 
 bus.emit('woo', 'moo')
 console.log(demoStore.state().hello)
-assert.equal(demoStore.state().hello, 'moo')
+assert.equal(demoStore.state().hello, 'moo', 'should call fn')
 
 sub.close()
 bus.emit('example', 'test')
 console.log(demoStore.state().hello)
-assert.equal(demoStore.state().hello, 'moo')
+assert.equal(demoStore.state().hello, 'moo', 'should unsubscribe')
 
 
