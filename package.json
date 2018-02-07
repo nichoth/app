@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "test": "node example/index.js"
+  },
+  "dependencies": {
+    "@nichoth/state": "0.0.10"
+  },
+  "devDependencies": {
+    "@nichoth/events": "^0.5.2",
+    "eslint": "^4.17.0",
+    "eslint-config-minlint": "^2.0.0"
+  },
+  "name": "@nichoth/app",
+  "version": "0.0.0",
+  "description": "stuff",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/app.git"
+  },
+  "author": "nichoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/app/issues"
+  },
+  "homepage": "https://github.com/nichoth/app#readme"
+}
